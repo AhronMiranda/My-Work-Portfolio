@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="bg-glow bg-glow--one" aria-hidden="true" data-parallax-speed="0.15"></div>
+    <div class="bg-glow bg-glow--two" aria-hidden="true" data-parallax-speed="0.08"></div>
+    <div class="bg-glow bg-glow--three" aria-hidden="true" data-parallax-speed="0.04"></div>
+
+    <header class="masthead">
+        <img src="pfp.png" alt="Ahron Miranda's Logo" class="pfp">
+        <span class="name">Ahron Miranda</span>
+        <div class="issue-line">
+            <span>1st Portfolio |</span>
+            <span>Vol. I — Design &amp; Code</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="sidebarNav">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    <hr style="display:none;">
+
+    <main>
+        <nav class="sidebar-navigation" id="sidebarNav">
+            <span class="toc-label">Table of Contents</span>
+            <ul>
+                <li class="navigation"><a href="#about-me" class="active"><span class="num">01</span>About Me</a></li>
+                <li class="navigation"><a href="#skills"><span class="num">02</span>Skills</a></li>
+                <li class="navigation"><a href="#projects"><span class="num">03</span>Projects</a></li>
+                <li class="navigation"><a href="#project-gallery"><span class="num">04</span>Project Gallery</a></li>
+                <li class="navigation"><a href="#achievements"><span class="num">05</span>Achievements</a></li>
+                <li class="navigation"><a href="#advocacy"><span class="num">06</span>Advocacy</a></li>
+                <li class="navigation"><a href="#contact-me"><span class="num">07</span>Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <div class="body-content">
+
+            <section id="about-me" class="hero">
+                <div class="about-me-info">
+                    <span class="kicker">Graphic Designer • Developer • Multi-disciplined Artist</span>
+                    <h1>Ahron Jieanne Kent U. Miranda</h1>
+                    <p>Ahron has built a reputation for delivering bold, impactful visual solutions tailored to each
+                        client's unique vision. Two years as Chief Graphics Designer for his school's publication took
+                        him to the National Schools Press Conference stage, where he won as a Layout Artist in
+                        Collaborative Desktop Publishing – English. He now brings that same editorial precision to code,
+                        building interfaces as carefully composed as a printed page.</p>
+                    <a href="#contact-me" class="cta" data-magnetic>Contact Me</a>
+                </div>
+
+                <div class="hero-img">
+                    <img src="hero-page-profile.png" alt="Portrait of Ahron Miranda">
+                </div>
+            </section>
+
+            <section id="skills">
+                <span class="eyebrow">Section 02</span>
+                <h2 class="section-title" data-split-text>What I bring to the page — and the screen.</h2>
+                <div class="skills-grid" data-render="skills"></div>
+            </section>
+
+            <section id="projects">
+                <span class="eyebrow">Section 03</span>
+                <h2 class="section-title" data-split-text>Selected work, front page to back.</h2>
+                <div class="projects-grid" data-render="projects"></div>
+            </section>
+
+            <section id="project-gallery" class="project-gallery-section">
+                <div class="gallery-pinned">
+
+                    <div class="gallery-header">
+                        <span class="eyebrow">Section 04</span>
+                        <h2 class="section-title">A Gallery of my Work.</h2>
+                        <p class="gallery-caption">Keep scrolling — the deck spins one card at a time.</p>
+                    </div>
+
+                    <div class="wrapper gallery-wrapper">
+                        <div data-title="Dragon Poster">
+                            <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/740712807_122117697188845687_8464631693430742740_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EMIE66qM5mAQ7kNvwFNObJ8&_nc_oc=AdquMZMT_zMbGPgacDqefnXNrUrjL3o5-jkYdzsaBUKgfpYrSRwKFddqegqPUwOxiMc&_nc_zt=23&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=1CjJ8i6vGVsjxYeyj90ykg&_nc_ss=7b289&oh=00_AQBW_sGwRkmS8GFeW_dBcOT74wqJfvdnYho8c5LK59431g&oe=6A5D0D53" alt="Dragon Poster" loading="lazy">
+                        </div>
+                        <div data-title="Jordan Clarkson Poster">
+                            <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/733606437_122116711034845687_3238583770524484330_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wM9vjS2a1YQQ7kNvwFE5yQb&_nc_oc=AdptvFnFppCUJX6cde_AANuYCuHa8ikULBZLh1PhXAnotQpJCgpsZqD-f64DTRDIi1Q&_nc_zt=23&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=xAdiw-QGmWFntwSUHu5C_g&_nc_ss=7b289&oh=00_AQDfOUO6F2EplabRabAvgs1F0U8UQksUUHEsB141DUBp2w&oe=6A5CFD5F" alt="Jordan Clarkson Poster" loading="lazy">
+                        </div>
+                        <div data-title="Jordan Clarkson T-Shirt">
+                            <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/734846163_122116710980845687_7492450996865708103_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=O4j8cx1KGHkQ7kNvwGPxRkZ&_nc_oc=AdpJCg-L-KXJVc-xiUFzfOGzgVGLrKlRG2Cvc6fDpRGVrGfJCl9aHTQx4rLywHdsEtE&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&_nc_gid=gMCrFTeBe73H0_etGIHC7w&_nc_ss=7b289&oh=00_AQBlB-hFDgxr1Y5RbJsYMAWMdqu04mmlqZ-HS__JggHCLw&oe=6A5CF276" alt="Jordan Clarkson T-Shirt" loading="lazy">
+                        </div>
+                        <div data-title="Kitchie Nadal Photo">
+                            <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/659762648_122094899576845687_8804456739938917647_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=X_3aZ3quYQ4Q7kNvwFGP7o7&_nc_oc=AdoNFqhps3YcXibM6wD5MAlQd2-dXhK3CiZXi401O4UC2wwYE2Et-v_VfJ32norLknA&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&_nc_gid=S599srWcTeYGpmwbMyFqsg&_nc_ss=7b289&oh=00_AQD2SugRaCG1XwLN7zfqCrJUGhrN1xkWb6pBClMIyiL7bw&oe=6A5CEF1D" alt="Kitchie Nadal Photo" loading="lazy">
+                        </div>
+                        <div data-title="Uminari Photo">
+                            <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/656973675_122094758570845687_5880779693641956252_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YoG94-8IVKAQ7kNvwEFfrbA&_nc_oc=AdoNZpjSXMFKB59PqCwORH_q3JPeImN481EXsrBEAYUUDKmfUlNrHBfTbqTMETS3qBE&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=CGvWwY5y8mZi2K6SndNVmQ&_nc_ss=7b289&oh=00_AQD_wN0zQFXYvFJanYBHIu6FFScRxGrsAtHTtPsAxrfETw&oe=6A5CDCC1" alt="Uminari Photo" loading="lazy">
+                        </div>
+                        <div data-title="Guitar Photo">
+                            <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/657210932_122094758534845687_631009455875229566_n.jpg?stp=dst-jpg_tt6&cstp=mx1365x2048&ctp=s1365x2048&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=avP83QY3fEQQ7kNvwHKucK9&_nc_oc=AdoKHzrrTv6IM6QQzTEUM7xBnxWclaOQTFfjq_rheM6dMjpSjfIhlNoWHzW-Hk0o-Bs&_nc_zt=23&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=DV_u2lTItRCCM3HlOJBzTQ&_nc_ss=7b289&oh=00_AQCdpg6rXUg9HtEz35R4EnNHehjOd0MSmKT1gcaTTVsJ8g&oe=6A5CDC07" alt="Guitar photo" loading="lazy">
+                        </div>
+                        <div data-title="Vocal Uminari">
+                            <img src="https://scontent.fmnl37-1.fna.fbcdn.net/v/t39.30808-6/657926110_122094759194845687_8512708059611219296_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pNAKXWHfvnIQ7kNvwHLAuxD&_nc_oc=AdqzSiARTHnjOZuzVfyBnK1uYcPnkyou1xuEU5iGtzFMOK7LuzMDqy_J72_ZcWXnZu4&_nc_zt=23&_nc_ht=scontent.fmnl37-1.fna&_nc_gid=ymNdEfZmKgUmA6nvjAIXwg&_nc_ss=7b289&oh=00_AQBjKQ69yeyKETiUv4ZEsTmdtKUC2AQOs_9sOtTKtNYccQ&oe=6A5CF1FA" alt="Photo of Vocal Uminari" loading="lazy">
+                        </div>
+                        <div data-title="Gundam Photograph">
+                            <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/643795156_34103034432678350_9214771367210076844_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mFt7-etnCWUQ7kNvwEkbK-d&_nc_oc=Adrrwc5QzlMP-0JpuSSWXKcNXxQrKUm3Svz9j0vrru_b_1ppZb92cPv5kb5d_zyZVuY&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&_nc_gid=wpfZi1SUd_CnXQpDNr5F6Q&_nc_ss=7b289&oh=00_AQDAC3bJ7rSdUlTns3l-JLYgDJBWsR7pV-4xY-qix6r2pA&oe=6A5D0F51" alt="Gundam Photograph" loading="lazy">
+                        </div>
+                        <div data-title="Supra Photo">
+                            <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/644361620_34103050619343398_2761197967944523331_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EkEvl9epeJUQ7kNvwG0xWUM&_nc_oc=Ado-5bUfO4KYWZgp0sHbMSO912BPnBGej57sJcF8cZuX_Bmx8hxJNNN9wFKap16KwGA&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&_nc_gid=UwTPzYBBZlXYdkVBRw3_uw&_nc_ss=7b289&oh=00_AQBDMVV6YTG9IjjxmHFigLpH5RMJC6iJasCbipKdxbQTIg&oe=6A5CDDF6" alt="Supra Photo" loading="lazy">
+                        </div>
+                        <div data-title="Luffy Photo">
+                            <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/644305420_34103115962670197_4267335151476542318_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pD_7ufvVflQQ7kNvwFHtq08&_nc_oc=Ado-4G7ngxgYkXbKNhzUwTTP2Vvb2STUcj7Yio2Q5IloS2M7KqlmqSpznuM1hiwaUrA&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=7nLzY45fve4P3PTWacVSvA&_nc_ss=7b289&oh=00_AQDEBPXWZ2Y46U7UO-rDHzJxkdjr6AZCsx3BPUqvp9nX_A&oe=6A5CEFA9" alt="Luffy Photo" loading="lazy">
+                        </div>
+                        <div data-title="Cafe Modeling">
+                            <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/658530522_34678262511822203_4911932090650731010_n.jpg?stp=dst-jpg_tt6&cstp=mx1366x2048&ctp=s1366x2048&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OVq2ka9tSKMQ7kNvwHAROX8&_nc_oc=AdqgtF0JdBKDP15jsC9QufSDeZ695Q6_Xg1afPnrI6IMT-SUsd-sE4gSGjwFe4j0AX8&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&_nc_gid=21DHkYNRRofgSXd6HYgeLA&_nc_ss=7b289&oh=00_AQAmMvDanme9ArLpC9cVKa7VdH-wh_NUb1ENAPc56IsyUg&oe=6A5D0C64" alt="Cafe Modeling" loading="lazy">
+                        </div>
+                        <div data-title="Buwan ng Wika Pageant">
+                            <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/480688959_1019190400256715_8912455965927174949_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1153&ctp=s2048x1153&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wnmctqlUPK8Q7kNvwEQ8sJH&_nc_oc=AdqaS_H-96GS-oA3gtksDkOiLKnrP9EdySo9a-lOnQenbu2gjFEUbZATtOJ6S8BPYIA&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&_nc_gid=DUue8aRTEPC6G3MxqXY1dg&_nc_ss=7b289&oh=00_AQDzyPPI8LAC5B-U8uEpB7-1R8f9dp6Pm-PrpK20hmY7ZA&oe=6A5CF0FC" alt="Mr. Lakandula" loading="lazy">
+                        </div>
+                        <div data-title="Photography Session">
+                            <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/497940966_29638120129169825_6033514357954051321_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1366&ctp=s2048x1366&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=201AN3Jsa-EQ7kNvwHzTO4x&_nc_oc=AdoGgMAPE2ySTpHOlFkPx3hsx1dq_trd4aJYhkGlTa6F3UGl8pfs3W-pVbf7T2sdUAE&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=aszKnBstScEh3NxMOFhGhg&_nc_ss=7b289&oh=00_AQBakxCxGEMEcKj6R3Wa3ImF7JGfMhwo0bLXWToorh8cHA&oe=6A5D0167" alt="Photography Session" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="gallery-end-caption">
+                        My Works as a Graphic Designer, Photographer, and Student.
+                    </div>
+
+                    <div class="gallery-mouse" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 40" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="mouse">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 3m0 4a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-4a4 4 0 0 1 -4 -4z" />
+                            <path d="M12 7l0 4" />
+                            <path d="M8 26l4 4l4 -4">
+                                <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                                    values="0 0; 0 4; 0 0" dur="1s" repeatCount="indefinite" />
+                            </path>
+                        </svg>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="achievements">
+                <span class="eyebrow">Section 05</span>
+                <h2 class="section-title" data-split-text>A short record of the work so far.</h2>
+                <div class="achievements-list" data-render="achievements"></div>
+            </section>
+
+            <section id="advocacy">
+                <span class="eyebrow">Section 06</span>
+                <h2 class="section-title" data-split-text>What this work is in service of.</h2>
+                <div class="advocacy-wrap">
+                    <p class="advocacy-quote">"In order to reach your full potential, you must create more than you
+                        consume."</p>
+                    <div class="advocacy-body">
+                        <p>Ahron is an advocate for student press freedom and for design education that starts young.
+                            Through his years in campus journalism, he has mentored incoming layout artists at his
+                            school's publication, walking them through grid systems and type hierarchy from scratch.</p>
+                        <p>He believes design and code are the same discipline wearing different tools — both are about
+                            making information easy to trust and easy to act on.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-me">
+                <span class="eyebrow">Section 07</span>
+                <h2 class="section-title" data-split-text>Get in touch.</h2>
+                <div class="contact-wrap">
+                    <p class="big-cta">Open to design and front-end work — reach out below.</p>
+                    <ul class="contact-list">
+                        <li><a href="#"><span class="arrow">→</span>
+                                ahronjieannekent.miranda@lorma.edu</a></li>
+                        <li><a href="https://www.instagram.com/kent.rel8/" target="_blank"><span class="arrow">→</span> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/Ahron.Miranda/" target="_blank"><span class="arrow">→</span> Facebook Page</a></li>
+                        <li><a href="https://github.com/AhronMiranda" target="_blank"><span class="arrow">→</span> GitHub</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
