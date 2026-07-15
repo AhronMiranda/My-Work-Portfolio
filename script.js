@@ -262,14 +262,6 @@ function initProjectGallery() {
         const inView =
             sectionRect.bottom > 0 && sectionRect.top < window.innerHeight;
 
-        if (inView && !wasInView && pinned) {
-            pinned.classList.add('is-entering');
-            setTimeout(() => pinned.classList.remove('is-entering'), 1000);
-        }
-        if (!inView && wasInView && pinned) {
-            pinned.classList.add('is-leaving');
-            setTimeout(() => pinned.classList.remove('is-leaving'), 800);
-        }
         wasInView = inView;
 
         if (inView) {

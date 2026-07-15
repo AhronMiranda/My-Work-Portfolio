@@ -39,7 +39,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
     color: var(--ink);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    overflow-x: clip;
     position: relative;
 }
 
@@ -1118,24 +1118,6 @@ section.is-visible .contact-list li:nth-child(4) { transition-delay: 0.6s; }
 
 #project-gallery .gallery-mouse.is-hidden {
     opacity: 0;
-}
-
-#project-gallery .gallery-pinned.is-entering .gallery-wrapper {
-    animation: gallery-enter 1s var(--ease-out-expo) both;
-}
-
-#project-gallery .gallery-pinned.is-leaving .gallery-wrapper {
-    animation: gallery-exit 0.8s var(--ease-out-expo) both;
-}
-
-@keyframes gallery-enter {
-    from { opacity: 0; transform: scale(0.85); filter: blur(20px); }
-    to   { opacity: 1; transform: scale(1); filter: blur(0); }
-}
-
-@keyframes gallery-exit {
-    from { opacity: 1; transform: scale(1); filter: blur(0); }
-    to   { opacity: 0; transform: scale(1.1); filter: blur(20px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
